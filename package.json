@@ -1,0 +1,19 @@
+{
+  "name": "daily-bread",
+  "version": "1.0.0",
+  "description": "A delightful site to display an array of delicious breads and baked goods",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolynmberard/daily-bread.git"
+  },
+  "author": "Carolyn Berard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolynmberard/daily-bread/issues"
+  },
+  "homepage": "https://github.com/carolynmberard/daily-bread#readme"
+}
