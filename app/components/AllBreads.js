@@ -7,12 +7,11 @@ class AllBreads extends Component {
 
   componentDidMount() {
     this.props.loadBreads()
-    console.log('did i dispatch?', this.props)
   }
 
   render() {
     const breads = this.props.breads || []
-    console.log('I want bread', this.props)
+
     return (
       <div className="all-breads-page">
         <h1>Enjoy our daily offerings</h1>
