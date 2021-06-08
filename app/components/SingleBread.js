@@ -11,7 +11,6 @@ class SingleBread extends Component {
 
   render() {
     const bread = this.props.bread
-    // console.log('bread >>', bread)
     return (
       <div className="bread-box">
         <h1>{bread.name}</h1>
@@ -24,7 +23,6 @@ class SingleBread extends Component {
         </div>
         <div className="bread-box-right">
           <EditBread props={bread} />
-          {/* <DeleteBread /> */}
         </div>
       </div>
     )

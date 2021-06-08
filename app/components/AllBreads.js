@@ -1,13 +1,21 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { fetchBreads } from '../redux/allBreads'
+import { fetchBreads, destroyBread } from '../redux/allBreads'
 import AddBread from './AddBread'
 
 class AllBreads extends Component {
+  constructor() {
+    super()
+    this.handleClick = this.handleClick.bind(this)
+  }
 
   componentDidMount() {
     this.props.loadBreads()
+  }
+
+  handleClick(evt) {
+    this.props.deleteBread(evt.target.id)
   }
 
   render() {
@@ -21,12 +29,15 @@ class AllBreads extends Component {
           {breads.map(bread => {
             return (
               <ul key={bread.id}>
+                <Link to={`/breads/${bread.id}`}>
                 <h2>{bread.name}</h2>
+                </Link>
                 <Link to={`/breads/${bread.id}`}>
                   <img src={bread.imageUrl} width="150" height="150" />
                 </Link>
                 <li>{bread.description}</li>
                 <li>${bread.price}</li>
+                <button type="submit" id={bread.id} onClick={this.handleClick}>Remove this Offering</button>
               </ul>
             )
           })}
@@ -46,7 +57,8 @@ const mapState = state => {
 
 const mapDispatch = dispatch => {
   return {
-    loadBreads: () => dispatch(fetchBreads())
+    loadBreads: () => dispatch(fetchBreads()),
+    deleteBread: (id) => dispatch(destroyBread(id))
   }
 }
 
