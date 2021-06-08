@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { fetchBreads } from '../redux/allBreads'
+import AddBread from './AddBread'
 
 class AllBreads extends Component {
 
@@ -31,7 +32,7 @@ class AllBreads extends Component {
           })}
         </ul>
         <h2>Not liking what you see? Add to our offerings</h2>
-        {/* insert AddBread component here */}
+        <AddBread />
       </div>
     )
   }
