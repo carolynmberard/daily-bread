@@ -5,7 +5,7 @@ import { addNewBread } from '../redux/allBreads'
 const initialState = {
   name: '',
   description: '',
-  price: 0.00
+  price: ''
 }
 class AddBread extends Component {
   constructor() {
@@ -31,15 +31,15 @@ class AddBread extends Component {
         <label htmlFor="name">
           Name
         </label>
-        <input type="text" name="name" onChange={this.handleChange} value={this.state.name} />
+        <input type="text" name="name" onChange={this.handleChange} value={this.state.name} placeholder="a suitable name for your new offering" />
         <label htmlFor="description">
           Description
         </label>
-        <input type="text" name="description" onChange={this.handleChange} value={this.state.description} />
+        <input type="text" name="description" onChange={this.handleChange} value={this.state.description} placeholder="a brief description of your offering" />
         <label htmlFor="price">
           Price
         </label>
-        <input type="text" name="price" onChange={this.handleChange} value={this.state.price} />
+        <input type="text" name="price" onChange={this.handleChange} value={this.state.price} placeholder="0.00" />
         <button type="submit">Add a New Bread</button>
       </form>
     )

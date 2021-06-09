@@ -33,9 +33,8 @@ class AllBreads extends Component {
                 <h2>{bread.name}</h2>
                 </Link>
                 <Link to={`/breads/${bread.id}`}>
-                  <img src={bread.imageUrl} width="150" height="150" />
+                  <img src={bread.imageUrl} width="250" height="250" />
                 </Link>
-                <li>{bread.description}</li>
                 <li>${bread.price}</li>
                 <button type="submit" id={bread.id} onClick={this.handleClick}>Remove this Offering</button>
               </ul>

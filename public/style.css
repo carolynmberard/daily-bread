@@ -1,0 +1,154 @@
+/* Styles for entire application */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #4f6d7a;
+  background-color: #e8dab2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #dd6e42;
+}
+
+p {
+  font-family: "Avenir Next Condensed", sans-serif;
+}
+
+img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+button {
+  margin: 0.5em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  color: #dd6e42;
+  background-color: #c0d6df;
+  font-family: "Lato", sans-serif;
+  transition: 0.3s all ease;
+}
+
+button:hover {
+  background-color: #dd6e42;
+  color: #c0d6df;
+}
+
+/* Styles for navbar */
+.navbar {
+  display: flex;
+  background-color: #dd6e42;
+  color: #e8dab2;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.navbar a:hover {
+  color: #c0d6df;
+}
+
+.nav-left a {
+  font-weight: 500;
+  font-size: larger;
+}
+
+/* Styles for the homepage */
+.homepage-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://media.giphy.com/media/aj4qLYrmQBvRL4oQtG/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.homepage-container h1 {
+  font-size: 5em;
+}
+
+/* Styles for the AllBreads component */
+.all-breads-page h1 {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 4em;
+}
+
+.all-breads-page h2 {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.all-breads-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2em;
+  text-align: center;
+}
+
+.all-breads-list h2 {
+  font-size: 2.5em;
+  padding-bottom: 0.25em;
+}
+
+.all-breads-list ul {
+  margin: 1em;
+}
+
+.all-breads-list li {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+/* Styles for the AddBread component */
+#new-bread-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+#new-bread-form label {
+  align-items: center;
+}
+
+#new-bread-form input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-top: 0.25em;
+  margin-bottom: 0.75em;
+  width: 30vw;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+/* Styles for the SingleBread component */
+.bread-box {
+  display: flex;
+  justify-content: space-between;
+}
