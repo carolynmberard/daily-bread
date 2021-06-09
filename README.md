@@ -21,4 +21,8 @@ In setting up my backend, I decided to modularize the Express routes and Sequeli
 
 Similarly on the frontend, I chose to use Redux to manage my state. This would once again provide the necessary framework to scale the application to deal with larger and more complex data.
 
+Currently, the product id is used as the parameter for fetching product data from the backend and rendering it for the user. A couple options I'd like to explore in the future is implementing a search bar to allow users to search for a specific product by name on the frontend and querying with the product name on the backend.
+
 Given the parameters of this project, I chose to use React class components, but given the opportunity, I would choose to refactor those class components into functional components to keep up with changing practices in industry. I would also write unit tests to ensure that any new code could be tested thoroughly before being deployed.
+
+To make the user experience more fluid across devices, I'd include media queries in my styles to account for a wide variety of screen sizes. If this product dealt with a more complex structure, I would forgo the single CSS style sheet in favor of utilizing Styled Components to prevent one gargantuan style sheet.

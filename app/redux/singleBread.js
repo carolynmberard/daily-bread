@@ -1,8 +1,10 @@
 import axios from 'axios'
 
+// action types
 const GOT_SINGLE_BREAD = 'GOT_SINGLE_BREAD'
 const UPDATED_BREAD = 'UPDATE_BREAD'
 
+// action creators
 const gotSingleBread = bread => {
   return {type: GOT_SINGLE_BREAD, bread}
 }
@@ -10,6 +12,7 @@ const updatedBread = bread => {
   return {type: UPDATED_BREAD, bread}
 }
 
+// thunks
 export const fetchSingleBread = id => {
   return async dispatch => {
     try {
@@ -20,7 +23,6 @@ export const fetchSingleBread = id => {
     }
   }
 }
-
 export const updateSingleBread = (bread) => {
   const changingBread = bread.props
   return async (dispatch) => {

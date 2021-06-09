@@ -1,9 +1,11 @@
 import axios from 'axios'
 
+// action types
 const GOT_BREADS = 'GOT_BREADS'
 const ADD_BREAD = 'ADD_BREAD'
 const DESTROYED_BREAD = 'DESTROYED_BREAD'
 
+// action creators
 export const gotBreads = breads => {
   return {type: GOT_BREADS, breads}
 }
@@ -14,6 +16,7 @@ export const destroyedBread = id => {
   return {type: DESTROYED_BREAD, id}
 }
 
+// thunks
 export const fetchBreads = () => {
   return async dispatch => {
     try {
