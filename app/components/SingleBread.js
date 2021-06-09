@@ -13,9 +13,9 @@ class SingleBread extends Component {
     const bread = this.props.bread
     return (
       <div className="bread-box">
-        <h1>{bread.name}</h1>
         <div className="bread-box-left">
-          <img src={bread.imageUrl} width="250" height="250" />
+          <h1>{bread.name}</h1>
+          <img src={bread.imageUrl} width="300" height="300" />
           <ul>
             <li>{bread.description}</li>
             <li>${bread.price}</li>

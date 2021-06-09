@@ -8,7 +8,7 @@ class EditBread extends Component {
     this.state = {
       name: '',
       description: '',
-      price: 0.00,
+      price: '',
       imageUrl: ''
     }
     this.handleChange = this.handleChange.bind(this)
@@ -53,14 +53,14 @@ class EditBread extends Component {
       <div className="edit-bread-box">
         <h2>Did we get something wrong? Edit this offering</h2>
         <form className="edit-bread-form" onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Change the name</label>
-          <input type="text" name="name" onChange={this.handleChange} value={name} />
+          <label htmlFor="name" >Change the name</label>
+          <input type="text" name="name" onChange={this.handleChange} value={name} placeholder="a suitable name for your new offering" />
           <label htmlFor="description">Write a new description</label>
-          <input type="text" name="description" onChange={this.handleChange} value={description} />
+          <input type="text" name="description" onChange={this.handleChange} value={description} placeholder="a brief description of your offering" />
           <label htmlFor="price">Choose your price</label>
-          <input type="text" name="price" onChange={this.handleChange} value={price} />
+          <input type="text" name="price" onChange={this.handleChange} value={price} placeholder="0.00" />
           <label htmlFor="imageUrl">Pick a fitting image</label>
-          <input type="text" name="imageUrl" onChange={this.handleChange} value={imageUrl} />
+          <input type="text" name="imageUrl" onChange={this.handleChange} value={imageUrl} placeholder="please enter the url for your desired image" />
           <button type="submit">Edit this Offering</button>
         </form>
       </div>

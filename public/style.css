@@ -149,6 +149,69 @@ button:hover {
 
 /* Styles for the SingleBread component */
 .bread-box {
+  height: 80vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 1em;
+}
+
+.bread-box h1 {
+  width: 40vw;
+  text-align: center;
+  font-size: 4em;
+  padding-top: 0.5em;
+}
+
+.bread-box-left,
+.bread-box-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.bread-box-left li {
+  text-align: center;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.bread-box-left img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Styles for EditBread component */
+.edit-bread-box {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.edit-bread-box h2 {
+  padding-bottom: 1em;
+}
+
+.edit-bread-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+.edit-bread-form label {
+  align-items: center;
+}
+
+.edit-bread-form input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-top: 0.25em;
+  margin-bottom: 0.75em;
+  width: 30vw;
+  background-color: #eaeaea;
+  text-align: center;
 }
